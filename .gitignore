@@ -1,0 +1,40 @@
+# Secrets — NEVER commit
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.ruff_cache/
+
+# Generated data & model artefacts (large / sensitive / reproducible)
+data/raw/*
+data/curated/*
+data/gold/*
+!data/*/.gitkeep
+models/*
+!models/.gitkeep
+*.db
+
+# Generated figures (produced by evaluate.py)
+docs/figures/*
+!docs/figures/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Agent config (local only)
+.agents/

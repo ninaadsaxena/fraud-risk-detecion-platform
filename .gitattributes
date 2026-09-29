@@ -1,0 +1,9 @@
+﻿# Normalize all text files to LF on commit
+* text=auto eol=lf
+
+# Explicitly binary — never mangle
+*.parquet binary
+*.joblib  binary
+*.png     binary
+*.jpg     binary
+*.db      binary
